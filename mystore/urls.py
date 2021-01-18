@@ -27,7 +27,7 @@ urlpatterns = [
     path('article/<int:article_id>/', article_number, name='article'),
     path('article/<int:article_id>/<slug:slug_text>', article_number, name='article'),
     path('users/<int:article_id>', users_number_article, name='users id'),
-    re_path(r'^(?P<phone_number>0{1}\d{9}$)', phone, name='phone number'),
+    re_path(r'^(?P<phone_number>0{1}(50|55|66|63|93|99|97|98|68|67)\d{7}$)', phone),
     re_path(r'^(?P<mark_text>^[0-9a-f]{4}\-{1}[0-9a-z]{6}$)', mark, name='marks'),
     path('page1', first, name='first'),
     path('main', main_page, name='main_page'),
