@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div style="padding: 20px; background-color: fuchsia"> Hello dear friend!!!</div>
+<a href="{% url 'main_page' %}">To the main page(the page from which we inherit)</a>
+<p>
+    <a href="{% url 'first' %}">To the first page</a>
+</p>
+<p>
+    <a href="{% url 'first_article' %}">Cyberpunk 2077</a>
+</p>
+<p>
+    <a href="{% url 'archive_article' %}">Metro Exodus</a>
+</p>
+<p>
+    <a href="{% url 'random' %}">random int(just for test)</a>
+</p>
+<p>
+    <a href="{% url 'article' article_id=random_id %}">Random article</a>
+</p>
+{% include 'add.html' %}
+{% endblock %}

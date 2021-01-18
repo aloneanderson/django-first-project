@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>gamestore</title>
+</head>
+<body>
+<div style="font-size: 50px; background-color: greenyellow" >Hello, this is game site</div>
+<div style="background-color: cyan">
+    {% block content %}
+    {% endblock %}
+</div>
+</body>
+
+<footer>
+    <hr>
+    <a href="{% url 'index' %}">To the index page</a>
+</footer>
+</html>

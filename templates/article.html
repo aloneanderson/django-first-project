@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+<div class="my_article">
+    {% block content %}
+    {% if article_id|divisibleby:"2" %}
+        Четное
+    {% else %}
+        Нечетное
+    {% endif%}
+
+</div>
+{% if slug_text %}
+    {%  include 'slug.html' with text=slug_text %}}
+{% endif %}}
+{% endblock %}
