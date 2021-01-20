@@ -32,4 +32,5 @@ urlpatterns = [
     path('page1', first, name='first'),
     path('main', main_page, name='main_page'),
     path('random', random_int, name='random'),
+    path('admin/', admin.site.urls),
 ]
